@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; }
+        .header { background: #2c3e50; color: white; padding: 20px; text-align: center; }
+        .content { padding: 20px; }
+        .footer { background: #f4f4f4; padding: 10px; text-align: center; font-size: 12px; }
+        .destaque { background: #f8f9fa; padding: 15px; border-left: 4px solid #3498db; margin: 10px 0; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Instituição de Ensino</h1>
+    </div>
+    
+    <div class="content">
+        <h2>Prezado(a) {{.Nome}},</h2>
+        
+        <p>Esperamos que esta mensagem o(a) encontre bem.</p>
+        
+        <div class="destaque">
+            <p><strong>Dados do Aluno:</strong></p>
+            <ul>
+                <li><strong>Matrícula:</strong> {{.Matricula}}</li>
+                <li><strong>Curso:</strong> {{.Curso}}</li>
+                <li><strong>Campus:</strong> {{.Campus}}</li>
+            </ul>
+        </div>
+        
+        <p>Este é um comunicado importante da instituição. Por favor, fique atento(a) aos próximos avisos.</p>
+        
+        <p>Qualquer dúvida, entre em contato conosco através dos canais oficiais.</p>
+    </div>
+    
+    <div class="footer">
+        <p>Instituição de Ensino © 2024</p>
+        <p>Este é um email automático, por favor não responda.</p>
+    </div>
+</body>
+</html>

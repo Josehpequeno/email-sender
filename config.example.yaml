@@ -1,0 +1,15 @@
+smtp:
+  host: "smtp.gmail.com"
+  port: 587
+  email: "seu_email@instituicao.edu.br"
+  password: "sua_senha_de_app"
+
+limits:
+  daily_limit: 500
+  delay_seconds: 2
+  batch_size: 90
+  workers: 3
+
+email:
+  subject: "Comunicado Importante da Instituição"
+  template: "templates/email_template.html"
